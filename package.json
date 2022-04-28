@@ -4,6 +4,8 @@
   "description": "Image Processing API",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts",
     "start": "nodemon src/index.ts",
     "build": "npx tsc",
     "jasmine": "jasmine",
@@ -32,7 +34,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",
-    "prettier": "^2.6.2",
+    "prettier": "2.6.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }

@@ -1,7 +1,10 @@
-const person = 'Rory';
+import express from 'express';
+import routes from './routes/index';
+const app = express();
+const port = 3000;
 
-const buildPerson = (person: string) => {
-  return `your person is ${person}`;
-};
+app.use('/', routes);
 
-console.log(buildPerson(person));
+app.listen(port, () => {
+  console.log(`LISTENING ON PORT ${port}`);
+});
